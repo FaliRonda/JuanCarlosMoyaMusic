@@ -4,17 +4,28 @@ subtitle: This is the demo site for Bulma Clean Theme
 layout: page
 show_sidebar: true
 ---
-
-<div class="columns">
-    <div class="column is-12" id="presentation" style="height: 100vh;background-color: rgb(26, 26, 26);">
-        <div class="centered-content">
-            <h1 class="title is-1">Juan Carlos Moya Music</h1>
-            <h2 class="subtitle">Composer, producer, audio designer</h2>
+<div id="presentation">
+    <div class="columns" style="height: 80vh;">
+        <div class="column is-6 is-12-mobile"
+            style="background-image: url(/img/presentation_bg.png);background-repeat: no-repeat;background-size: cover;">
+            <div class="centered-content" style="width: 100%;padding: 2rem;">
+                <img src="/img/logo.png" style="">
+                <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">+12 YEARS OF EXPECIENCE</h1>
+                <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">COMPOSITION, PRODUCTION &
+                    SOUND</h1>
+                <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">VIDEOGAMES AND ARTISTS</h1>
+                <button class="button cta-button" style="margin: 2rem;">CONTACT</button>
+                <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">OR LISTEN MY PROJECTS!</h1>
+            </div>
+        </div>
+        <div id="jc-photo" class="column is-6 is-12-mobile"
+            style="background-color: rgb(26, 26, 26);padding: 0;background-image: url(/img/foto.png); background-position: center;">
         </div>
     </div>
+    <img class="separator" src="/img/presentation_separator.png">
 </div>
 
-<div class="columns">
+<!-- <div class="columns">
     <div class="column is-three-forth is-centered has-background-white" id="showreel" style="height: 100vh;">
         <div style="width: 50%;margin: auto;text-align: center;padding: 10rem 0;">
             <h1 class="title is-3 has-text-black">Showreel</h1>
@@ -28,7 +39,7 @@ show_sidebar: true
             </figure>
         </div>
     </div>
-</div>
+</div> -->
 
 <style>
     .centered-content {

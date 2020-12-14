@@ -11,3 +11,106 @@
 html {
     scroll-behavior: smooth;
 }
+
+.gh-sponsor {
+    color: #ea4aaa;
+}
+
+.navbar.is-primary .navbar-brand>a.navbar-item:hover {
+    background-color: initial;
+}
+
+.navbar.is-primary .navbar-end>a.navbar-item:hover {
+    color: white;
+    background-color: #A4031F;
+}
+
+.navbar-item {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar>.container .navbar-brand {
+        margin-left: 0;
+    }
+
+    .navbar.is-primary .navbar-end>.navbar-item {
+        color: #303030;
+    }
+
+    .navbar.is-primary .navbar-end>.navbar-item:last-child {
+        color: #A4031F;
+    }
+}
+
+.navbar>.container {
+    min-height: 2.25rem;
+}
+
+@media screen and (min-width: 1216px) {
+    .navbar .container:not(.is-max-desktop) {
+        max-width: 960px;
+    }
+}
+
+.cta-button {
+    background-color: #700215;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: #700215 0 0 5px;
+}
+
+.cta-button:hover {
+    color: white;
+    background-color: #A4031F;
+    box-shadow: #A4031F 0 0 40px;
+}
+
+.button:focus:not(:active) {
+    box-shadow: none;
+}
+.button:focus:hover {
+    box-shadow: #A4031F 0 0 40px;
+}
+
+.button:focus,
+.button:active {
+    color: white;
+}
+
+.separator {
+    width: 100%;
+    position: relative;
+    bottom: 62px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    #jc-photo {
+        display: none;
+    }
+
+    #presentation .title {
+        font-size: 1rem;
+    }
+
+    #presentation .button {
+        font-size: 1.5rem;
+    }
+
+    #presentation .column {
+        height: 500px;
+    }
+
+    #presentation .separator {
+        height: 20px;
+        top: -12px;
+    }
+
+    .navbar-brand a {
+        padding-left: 1rem;
+    }
+}

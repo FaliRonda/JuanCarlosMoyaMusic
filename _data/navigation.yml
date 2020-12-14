@@ -1,4 +1,6 @@
-- name: Showreel
-  link: showreel
-- name: Portfolio
-  link: portfolio
+- name: Projects
+  link: projects
+- name: Services
+  link: contact
+- name: Contact
+  link: contact

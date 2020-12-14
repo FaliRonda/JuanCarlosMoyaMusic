@@ -1,9 +1,9 @@
 
-<nav class="navbar is-primary" style="min-height: unset;height: 5rem;">
+<nav class="navbar is-primary" style="min-height: unset;height: 3rem;">
     <div class="container">
         <div class="navbar-brand">
-            <a onclick="document.getElementById('presentation').scrollIntoView();" class="navbar-item" style="padding: 0;">
-                <img src="/img/logo.png" style="height: 5rem;max-height: none;">
+            <a onclick="document.getElementById('presentation').scrollIntoView();" class="navbar-item">
+                <img src="/img/logo.png" style="height: 5rem;max-height: 2rem;box-shadow: none;">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     {% else %}
-                    <a onclick="document.getElementById('{{ item.link }}').scrollIntoView();" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                <a style="text-transform: uppercase;" onclick="document.getElementById('{{ item.link }}').scrollIntoView();" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                     {% endif %}
                 {% endfor %}
                 {% endif %}
