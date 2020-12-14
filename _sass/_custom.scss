@@ -81,7 +81,11 @@ html {
     color: white;
 }
 
-.separator {
+#presentation .columns {
+    height: 80vh;
+}
+
+#presentation .separator {
     width: 100%;
     position: relative;
     bottom: 62px;
@@ -91,6 +95,10 @@ html {
 @media (max-width: 768px) {
     #jc-photo {
         display: none;
+    }
+    
+    #presentation .columns {
+        height: initial;
     }
 
     #presentation .title {
@@ -107,7 +115,7 @@ html {
 
     #presentation .separator {
         height: 20px;
-        top: -12px;
+        top: -32px;
     }
 
     .navbar-brand a {
