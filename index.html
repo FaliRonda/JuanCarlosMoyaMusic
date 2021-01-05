@@ -4,7 +4,7 @@ subtitle: This is the demo site for Bulma Clean Theme
 layout: page
 show_sidebar: true
 ---
-<div id="presentation">
+<div id="presentation" class="section-f">
     <div class="columns">
         <div class="column is-6 is-12-mobile"
             style="background-image: url(/img/presentation_bg.png);background-repeat: no-repeat;background-size: cover;">
@@ -22,24 +22,98 @@ show_sidebar: true
             style="background-color: rgb(26, 26, 26);padding: 0;background-image: url(/img/foto.png); background-position: center;">
         </div>
     </div>
-    <img class="separator" src="/img/presentation_separator.png">
+    <img class="separator" src="/img/separator.png">
 </div>
 
-<!-- <div class="columns">
-    <div class="column is-three-forth is-centered has-background-white" id="showreel" style="height: 100vh;">
-        <div style="width: 50%;margin: auto;text-align: center;padding: 10rem 0;">
-            <h1 class="title is-3 has-text-black">Showreel</h1>
-            <hr>
-
-            <figure class="image is-16by9" style="border-radius: 30px 30px 30px 30px; overflow: hidden; height: 100%;">
-                <iframe class="has-ratio" width="640" height="360" src="https://www.youtube.com/embed/QARPenoeEGg"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </figure>
+<div id="games" class="section-f">
+    <div class="columns"
+        style="background-image: url(/img/games-bg.png);background-repeat: no-repeat;background-size: cover;padding: 2rem;">
+        <div class="column is-6 is-12-mobile" style="text-align: center;">
+            <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">VIDEOGAMES</h1>
+            <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-separator.png">
+            <img style="display: block; margin: auto;" src="/img/porfolio-games.png">
+        </div>
+        <div class="column is-6 is-12-mobile">
+            <img src="/img/games-images.png">
         </div>
     </div>
-</div> -->
+    <img class="separator" src="/img/white-separator.png">
+</div>
+
+<div id="games-cta" class="section-f">
+    <div class="columns" style="padding: 2rem;">
+        <div class="column is-6 is-12-mobile" style="text-align: center;">
+            <h1 class="title is-1 is-2-tablet is-6-mobile"
+                style="font-weight: bold;color: #303030;padding: 2rem;margin-bottom: 0;">DO
+                YOU WANT TO
+                LEVEL UP YOUR GAME?</h1>
+        </div>
+        <div class="column is-6 is-12-mobile">
+            <div class="wrapper">
+                <button class="button cta-button" style="margin: auto;">LEVEL UP</button>
+            </div>
+        </div>
+    </div>
+    <img class="separator" src="/img/inverse-separator.png">
+</div>
+
+<div id="artists" class="section-f">
+    <div class="columns"
+        style="background-image: url(/img/games-bg.png);background-repeat: no-repeat;background-size: cover;padding: 2rem;">
+        <div class="column is-6 is-12-mobile">
+            <img src="/img/artists-images.png" style="margin-left: -2rem;">
+        </div>
+        <div class="column is-6 is-12-mobile" style="text-align: center;">
+            <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">ARTISTS</h1>
+            <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-separator.png">
+            <img style="display: block; margin: auto;" src="/img/artists-portfolio.png">
+        </div>
+    </div>
+    <img class="separator" src="/img/inverse-white-separator.png">
+</div>
+
+<div id="artists-cta" class="section-f">
+    <div class="columns" style="padding: 2rem;">
+        <div class="column is-6 is-12-mobile">
+            <div class="wrapper">
+                <button class="button cta-button" style="margin: auto;">CONTACT
+                    NOW</button>
+            </div>
+        </div>
+        <div class="column is-6 is-12-mobile" style="text-align: center;">
+            <h1 class="title is-1 is-2-tablet is-6-mobile"
+                style="font-weight: bold;color: #303030;padding: 2rem;margin-bottom: 0;">AND TAKE YOUR SOUND TO
+                PROFFESIONAL!</h1>
+        </div>
+    </div>
+    <img class="separator" src="/img/black-separator.png">
+</div>
+
+<div id="artists" class="section-f">
+    <div class="columns"
+        style="background-image: url(/img/presentation_bg.png);background-repeat: no-repeat;background-size: cover;padding: 4rem 2rem;">
+        <div class="column is-10 is-10-mobile" style="text-align: center;margin: auto;">
+            <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">SERVICES</h1>
+            <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
+            <img style="display: block; margin: auto;" src="/img/services.png">
+            <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">CONTACT</h1>
+            <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
+
+            <form>
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                        <input class="input" type="text" placeholder="EMAIL*">
+                    </p>
+                    <p class="control is-expanded">
+                        <input class="input" type="text" placeholder="SUBJECT*">
+                    </p>
+                </div>
+                <textarea class="textarea" placeholder="MESSAGE*"></textarea>
+                <button class="button cta-button" style="margin: auto; font-size: initial;margin-top: 1rem;">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <style>
     .centered-content {
@@ -50,5 +124,22 @@ show_sidebar: true
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+
+    .centered-content-2 {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 </style>
