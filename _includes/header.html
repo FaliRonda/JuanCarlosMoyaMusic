@@ -21,7 +21,7 @@
                 {% for item in site.data.navigation %}
                     {% if item.dropdown %}
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a onclick="document.getElementById('{{ item.link }}').scrollIntoView();" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        <a onclick="scrollToElement('{{ item.link }}');" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                         <div class="navbar-dropdown">
                             {% for subitem in item.dropdown %}
                             <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     {% else %}
-                <a style="text-transform: uppercase;" onclick="document.getElementById('{{ item.link }}').scrollIntoView();" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                <a style="text-transform: uppercase;" onclick="scrollToElement('{{ item.link }}');" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
                     {% endif %}
                 {% endfor %}
                 {% endif %}

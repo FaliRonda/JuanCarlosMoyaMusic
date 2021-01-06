@@ -6,7 +6,7 @@ show_sidebar: true
 ---
 <div id="presentation" class="section-f">
     <div class="columns">
-        <div class="column is-6 is-12-mobile"
+        <div class="column"
             style="background-image: url(/img/presentation_bg.png);background-repeat: no-repeat;background-size: cover;">
             <div class="centered-content" style="width: 100%;padding: 2rem;">
                 <img src="/img/logo.png" style="">
@@ -14,7 +14,7 @@ show_sidebar: true
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">COMPOSITION, PRODUCTION &
                     SOUND</h1>
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">VIDEOGAMES AND ARTISTS</h1>
-                <button class="button cta-button" style="margin: 2rem;">CONTACT</button>
+                <button onclick="scrollToElement('contact-form');" class="button cta-button" style="margin: 2rem;">CONTACT</button>
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">OR LISTEN MY PROJECTS!</h1>
             </div>
         </div>
@@ -43,14 +43,14 @@ show_sidebar: true
 <div id="games-cta" class="section-f">
     <div class="columns" style="padding: 2rem;">
         <div class="column is-6 is-12-mobile" style="text-align: center;">
-            <h1 class="title is-1 is-2-tablet is-6-mobile"
+            <h1 class="title is-size-1 is-size-2-tablet is-size-4-mobile"
                 style="font-weight: bold;color: #303030;padding: 2rem;margin-bottom: 0;">DO
                 YOU WANT TO
                 LEVEL UP YOUR GAME?</h1>
         </div>
         <div class="column is-6 is-12-mobile">
             <div class="wrapper">
-                <button class="button cta-button" style="margin: auto;">LEVEL UP</button>
+                <button onclick="scrollToElement('contact-form');" class="button cta-button is-size-4-mobile" style="margin: auto;">LEVEL UP</button>
             </div>
         </div>
     </div>
@@ -76,12 +76,12 @@ show_sidebar: true
     <div class="columns" style="padding: 2rem;">
         <div class="column is-6 is-12-mobile">
             <div class="wrapper">
-                <button class="button cta-button" style="margin: auto;">CONTACT
+                <button onclick="scrollToElement('contact-form');" class="button cta-button is-size-4-mobile" style="margin: auto;">CONTACT
                     NOW</button>
             </div>
         </div>
         <div class="column is-6 is-12-mobile" style="text-align: center;">
-            <h1 class="title is-1 is-2-tablet is-6-mobile"
+            <h1 class="title is-size-1 is-size-2-tablet is-size-4-mobile"
                 style="font-weight: bold;color: #303030;padding: 2rem;margin-bottom: 0;">AND TAKE YOUR SOUND TO
                 PROFFESIONAL!</h1>
         </div>
@@ -93,13 +93,15 @@ show_sidebar: true
     <div class="columns"
         style="background-image: url(/img/presentation_bg.png);background-repeat: no-repeat;background-size: cover;padding: 4rem 2rem;">
         <div class="column is-10 is-10-mobile" style="text-align: center;margin: auto;">
-            <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">SERVICES</h1>
-            <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
-            <img style="display: block; margin: auto;" src="/img/services.png">
+            <div class="is-hidden-mobile">
+                <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">SERVICES</h1>
+                <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
+                <img style="display: block; margin: auto;" src="/img/services.png">
+            </div>
             <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">CONTACT</h1>
             <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
 
-            <form>
+            <form id="contact-form">
                 <div class="field is-grouped">
                     <p class="control is-expanded">
                         <input class="input" type="text" placeholder="EMAIL*">
@@ -109,7 +111,8 @@ show_sidebar: true
                     </p>
                 </div>
                 <textarea class="textarea" placeholder="MESSAGE*"></textarea>
-                <button class="button cta-button" style="margin: auto; font-size: initial;margin-top: 1rem;">SEND MESSAGE</button>
+                <button class="button cta-button" style="margin: auto; font-size: initial;margin-top: 1rem;">SEND
+                    MESSAGE</button>
             </form>
         </div>
     </div>
@@ -143,3 +146,14 @@ show_sidebar: true
         transform: translate(-50%, -50%);
     }
 </style>
+
+<script>
+    function scrollToElement(element) {
+        document.getElementById(element).scrollIntoView();
+
+        var navbarbutton = document.getElementsByClassName("navbar-burger")[0];
+
+        if(navbarbutton.className.includes("active"))
+            navbarbutton.click();
+    }
+</script>

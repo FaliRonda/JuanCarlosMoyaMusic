@@ -1,6 +1,6 @@
 - name: Projects
-  link: projects
+  link: games
 - name: Services
-  link: contact
+  link: contact-form
 - name: Contact
-  link: contact
+  link: contact-form
