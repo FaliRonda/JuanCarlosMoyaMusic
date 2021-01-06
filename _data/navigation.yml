@@ -1,5 +1,7 @@
-- name: Projects
+- name: Games
   link: games
+- name: Artists
+  link: artists
 - name: Services
   link: contact-form
 - name: Contact
