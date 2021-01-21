@@ -14,7 +14,8 @@ show_sidebar: true
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">COMPOSITION, PRODUCTION &
                     SOUND</h1>
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">VIDEOGAMES AND ARTISTS</h1>
-                <button onclick="scrollToElement('contact-form');" class="button cta-button" style="margin: 2rem;">CONTACT</button>
+                <button onclick="scrollToElement('contact-form');" class="button cta-button"
+                    style="margin: 2rem;">CONTACT</button>
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin: 0;">OR LISTEN MY PROJECTS!</h1>
             </div>
         </div>
@@ -27,11 +28,23 @@ show_sidebar: true
 
 <div id="games" class="section-f">
     <div class="columns"
-        style="background-image: url(/img/games-bg.png);background-repeat: no-repeat;background-size: cover;padding: 2rem;">
+        style="background-image: url(/img/games-bg.png);background-repeat: no-repeat;background-size: cover;padding: 4rem 2rem;">
         <div class="column is-6 is-12-mobile" style="text-align: center;">
             <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">VIDEOGAMES</h1>
             <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-separator.png">
-            <img style="display: block; margin: auto;" src="/img/porfolio-games.png">
+
+            <h1 class="title is-4 is-5-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">GAME MUSIC</h1>
+            <iframe width="75%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198666654&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+            <h1 class="title is-4 is-5-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">GAME AUDIO</h1>
+            <iframe title="Game Music playlist" class="has-ratio" width="640" height="360"
+                src="https://www.youtube.com/embed/videoseries?rel=0&list=PLc0_4iySQ9-SeNPhiI3oQScxJGPbVkq_2"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+            <!-- <img style="display: block; margin: auto;" src="/img/porfolio-games.png"> -->
         </div>
         <div class="column is-6 is-12-mobile">
             <img src="/img/games-images.png">
@@ -50,7 +63,8 @@ show_sidebar: true
         </div>
         <div class="column is-6 is-12-mobile">
             <div class="wrapper">
-                <button onclick="scrollToElement('contact-form');" class="button cta-button is-size-4-mobile" style="margin: auto;">LEVEL UP</button>
+                <button onclick="scrollToElement('contact-form');" class="button cta-button is-size-4-mobile"
+                    style="margin: auto;">LEVEL UP</button>
             </div>
         </div>
     </div>
@@ -76,7 +90,8 @@ show_sidebar: true
     <div class="columns" style="padding: 2rem;">
         <div class="column is-6 is-12-mobile">
             <div class="wrapper">
-                <button onclick="scrollToElement('contact-form');" class="button cta-button is-size-4-mobile" style="margin: auto;">CONTACT
+                <button onclick="scrollToElement('contact-form');" class="button cta-button is-size-4-mobile"
+                    style="margin: auto;">CONTACT
                     NOW</button>
             </div>
         </div>
@@ -145,6 +160,11 @@ show_sidebar: true
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
+
+    iframe {
+        border-radius: 20px;
+        box-shadow: 0 1px 20px black;
+    }
 </style>
 
 <script>
@@ -153,7 +173,7 @@ show_sidebar: true
 
         var navbarbutton = document.getElementsByClassName("navbar-burger")[0];
 
-        if(navbarbutton.className.includes("active"))
+        if (navbarbutton.className.includes("active"))
             navbarbutton.click();
     }
 </script>
