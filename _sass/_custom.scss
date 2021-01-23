@@ -125,6 +125,16 @@ html {
     }
 
     .carousel iframe {
-        height: 450px;
+        width: 100%;
+        height: 360px;
+    }
+
+    #portfolio {
+        width: 100%;
+    }
+
+    #showreel {
+        width: 100%;
+        height: 200px;
     }
 }
