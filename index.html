@@ -33,20 +33,19 @@ show_sidebar: true
             <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">VIDEOGAMES</h1>
             <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-separator.png">
 
-            <h1 class="title is-4 is-5-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">GAME MUSIC</h1>
+            <h1 class="title is-4 is-5-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">PORTFOLIO</h1>
             <iframe width="75%" height="450" scrolling="no" frameborder="no" allow="autoplay"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198666654&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
-            <h1 class="title is-4 is-5-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">GAME AUDIO</h1>
-            <iframe title="Game Music playlist" class="has-ratio" width="640" height="360"
-                src="https://www.youtube.com/embed/videoseries?rel=0&list=PLc0_4iySQ9-SeNPhiI3oQScxJGPbVkq_2"
-                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+            <h1 class="title is-4 is-5-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">SHOWREEL</h1>
+            <iframe title="Game Music playlist" class="has-ratio" width="75%" height="360"
+                src="https://www.youtube.com/embed/S67gRLOEyUs" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
 
             <!-- <img style="display: block; margin: auto;" src="/img/porfolio-games.png"> -->
         </div>
-        <div class="column is-6 is-12-mobile">
+        <div class="column is-6 is-12-mobile is-hidden-mobile">
             <img src="/img/games-images.png">
         </div>
     </div>
@@ -68,19 +67,47 @@ show_sidebar: true
             </div>
         </div>
     </div>
+    <br>
     <img class="separator" src="/img/inverse-separator.png">
 </div>
 
 <div id="artists" class="section-f">
     <div class="columns"
         style="background-image: url(/img/games-bg.png);background-repeat: no-repeat;background-size: cover;padding: 2rem;">
-        <div class="column is-6 is-12-mobile">
+        <div class="column is-6 is-12-mobile is-hidden-mobile">
             <img src="/img/artists-images.png" style="margin-left: -2rem;">
         </div>
         <div class="column is-6 is-12-mobile" style="text-align: center;">
             <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">ARTISTS</h1>
             <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-separator.png">
-            <img style="display: block; margin: auto;" src="/img/artists-portfolio.png">
+
+            <div id="artists-carousel" class="carousel" style="overflow: hidden; width: ;">
+                <div class="item-1">
+                    <iframe src="https://open.spotify.com/embed/track/4olRLi8N0Ew4Xce624pq0N" width="100%" height="700"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="item-2">
+                    <iframe src="https://open.spotify.com/embed/track/2QMeiGoJqFp5BCxHnnvxL5" width="100%" height="700"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="item-3">
+                    <iframe src="https://open.spotify.com/embed/track/2OD9WIQfxUCmEaVrt3NlcO" width="100%" height="700"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="item-4">
+                    <iframe src="https://open.spotify.com/embed/album/5t38EAAXdCWP0kSjYMlh1k" width="100%" height="700"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="item-5">
+                    <iframe src="https://open.spotify.com/embed/track/0PTe3taV5ctauSUfyWgHu7" width="100%" height="700"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="item-6">
+                    <iframe src="https://open.spotify.com/embed/track/73q6og7xhIySU7ErVrtBZG" width="100%" height="700"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+
         </div>
     </div>
     <img class="separator" src="/img/inverse-white-separator.png">
@@ -101,6 +128,7 @@ show_sidebar: true
                 PROFFESIONAL!</h1>
         </div>
     </div>
+    <br>
     <img class="separator" src="/img/black-separator.png">
 </div>
 
@@ -164,6 +192,14 @@ show_sidebar: true
     iframe {
         border-radius: 20px;
         box-shadow: 0 1px 20px black;
+    }
+
+    .carousel div:focus {
+        outline: none !important;
+    }
+
+    .carousel iframe {
+        box-shadow: none;
     }
 </style>
 
