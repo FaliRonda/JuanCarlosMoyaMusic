@@ -136,10 +136,10 @@ show_sidebar: true
 </div>
 
 <div id="contact" class="section-f">
-    <div class="columns"
+    <div id="services" class="columns"
         style="background-image: url(/img/intro-bg-3.jpg);background-repeat: no-repeat;background-size: cover;padding: 4rem 2rem;">
-        <div class="column is-10 is-10-mobile" style="text-align: center;margin: auto;">
-            <div id="services" class="is-hidden-mobile">
+        <div id="contact-form" class="column is-10 is-10-mobile" style="text-align: center;margin: auto;">
+            <div class="is-hidden-mobile">
                 <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">SERVICES</h1>
                 <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
                 <img style="display: block; margin: auto;" src="/img/services.png">
@@ -147,7 +147,7 @@ show_sidebar: true
             <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">CONTACT</h1>
             <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
 
-            <form method="POST" name="contact" id="contact-form" action="/thanks/" data-netlify="true">
+            <form method="POST" name="contact" action="/thanks/" data-netlify="true">
                 <div class="field is-grouped">
                     <p class="control is-expanded">
                         <input class="input" type="text" name="email" placeholder="EMAIL*" required>
@@ -206,14 +206,3 @@ show_sidebar: true
         box-shadow: none;
     }
 </style>
-
-<script>
-    function scrollToElement(element) {
-        document.getElementById(element).scrollIntoView();
-
-        var navbarbutton = document.getElementsByClassName("navbar-burger")[0];
-
-        if (navbarbutton.className.includes("active"))
-            navbarbutton.click();
-    }
-</script>

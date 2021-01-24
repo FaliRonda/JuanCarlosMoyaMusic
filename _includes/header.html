@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     {% else %}
-                <a style="text-transform: uppercase;" onclick="scrollToElement('{{ item.link }}');" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                <a style="text-transform: uppercase;" onclick="scrollToElement('{{ item.link }}');" class="navbar-item {% if item.link == page.url %}is-active{% endif %} {% if item.link == 'services' %}is-hidden-mobile{% endif %}">{{ item.name }}</a>
                     {% endif %}
                 {% endfor %}
                 {% endif %}

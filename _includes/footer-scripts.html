@@ -1,2 +1,17 @@
 <script src="/assets/js/bulma-carousel.min.js"></script>
+
+<script>
+    function scrollToElement(element) {
+        if (location.href.includes("thanks")){
+            window.location.href = "/#" + element;
+        }
+
+        document.getElementById(element).scrollIntoView();
+
+        var navbarbutton = document.getElementsByClassName("navbar-burger")[0];
+
+        if (navbarbutton.className.includes("active"))
+            navbarbutton.click();
+    }
+</script>
 <!-- footer scripts -->
