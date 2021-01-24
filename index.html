@@ -147,17 +147,17 @@ show_sidebar: true
             <h1 class="title is-3 is-4-tablet" style="font-weight: initial;margin-bottom: 0.75rem;">CONTACT</h1>
             <img style="display: block; margin: auto;margin-bottom: 0.75rem;" src="/img/title-red-separator.png">
 
-            <form id="contact-form">
+            <form method="POST" name="contact" id="contact-form" data-netlify="true">
                 <div class="field is-grouped">
                     <p class="control is-expanded">
-                        <input class="input" type="text" placeholder="EMAIL*">
+                        <input class="input" type="text" name="email" placeholder="EMAIL*">
                     </p>
                     <p class="control is-expanded">
-                        <input class="input" type="text" placeholder="SUBJECT*">
+                        <input class="input" type="text" name="subject" placeholder="SUBJECT*">
                     </p>
                 </div>
-                <textarea class="textarea" placeholder="MESSAGE*"></textarea>
-                <button class="button cta-button" style="margin: auto; font-size: initial;margin-top: 1rem;">SEND
+                <textarea class="textarea" name="message" placeholder="MESSAGE*"></textarea>
+                <button type="submit" class="button cta-button" style="margin: auto; font-size: initial;margin-top: 1rem;">SEND
                     MESSAGE</button>
             </form>
         </div>

@@ -1,6 +1,6 @@
 <footer class="footer" style="padding-bottom: 3rem;">
     <div class="container">
-        
+
         {% if site.footer_menu %}
         <div class="columns is-multiline">
             {% for item in site.data[site.footer_menu] %}
@@ -14,8 +14,75 @@
         {% endif %}
 
         <div class="content is-small has-text-centered">
-            <p class="">© JUAN CARLOS MOYA MUSIC 2021</p>
-            <img src="/img/social-media.png">
+            <p>© JUAN CARLOS MOYA MUSIC 2021</p>
+            <div class="social columns is-mobile is-centered">
+                <div class="column is-narrow">
+                    <a href="https://www.linkedin.com/in/juancarlosmoya/" target="_blank">
+                        <div class="social-wrapper">
+                            <img src="/img//social/linkedin-icon-1.svg"></image>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-narrow">
+                    <a href="https://open.spotify.com/artist/1uUYvINVv2x203jzxfVaRK?si=pQPReNr7TpmTE2d5pGX25g"
+                        target="_blank">
+                        <div class="social-wrapper">
+                            <img src="/img//social/spotify-2.svg"></image>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-narrow">
+                    <a href="https://www.youtube.com/c/JuanCarlosMoyaMusic" target="_blank">
+                        <div class="social-wrapper">
+                            <img src="/img//social/youtube.svg"></image>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-narrow">
+                    <a href="https://music.apple.com/mx/artist/juan-carlos-moya/823214784" target="_blank">
+                        <div class="social-wrapper">
+                            <img src="/img//social/apple-black.svg"></image>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-narrow">
+                    <a href="https://www.facebook.com/JuanCarlosMoyaMusic" target="_blank">
+                        <div class="social-wrapper">
+                            <img src="/img//social/facebook.svg"></image>
+                        </div>
+                    </a>
+                </div>
+                <div class="column is-narrow">
+                    <a href="https://www.instagram.com/juancarlosmoyamusic/" target="_blank">
+                        <div class="social-wrapper">
+                            <img src="/img//social/instagram.svg"></image>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
+
+<style>
+    .social {
+        margin-top: 0.5rem;
+    }
+
+    .social img {
+        max-width: 20px;
+        height: 40px;
+        margin: auto;
+    }
+
+    .social-wrapper {
+        width: 40px;
+        height: 40px;
+        background-color: #303030;
+        border-radius: 100%;
+    }
+
+    .is-narrow {
+        padding: 0.5rem;
+    }
+</style>
