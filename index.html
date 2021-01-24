@@ -150,15 +150,17 @@ show_sidebar: true
             <form method="POST" name="contact" id="contact-form" data-netlify="true">
                 <div class="field is-grouped">
                     <p class="control is-expanded">
-                        <input class="input" type="text" name="email" placeholder="EMAIL*">
+                        <input class="input" type="text" name="email" placeholder="EMAIL*" required>
                     </p>
                     <p class="control is-expanded">
-                        <input class="input" type="text" name="subject" placeholder="SUBJECT*">
+                        <input class="input" type="text" name="subject" placeholder="SUBJECT*" required>
                     </p>
                 </div>
-                <textarea class="textarea" name="message" placeholder="MESSAGE*"></textarea>
+                <textarea class="textarea" name="message" placeholder="MESSAGE*" required></textarea>
                 <button type="submit" class="button cta-button" style="margin: auto; font-size: initial;margin-top: 1rem;">SEND
                     MESSAGE</button>
+
+                <input type="hidden" name="_next" value="/thank-you/" />
             </form>
         </div>
     </div>
