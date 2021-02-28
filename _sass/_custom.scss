@@ -99,6 +99,11 @@ html {
     height: 800px;
 }
 
+
+.separator-offset {
+    bottom: 12px;
+}
+
 @media (max-width: 768px) {
     #jc-photo {
         display: none;
@@ -144,5 +149,9 @@ html {
 
     .thank-you {
         height: 450px;
+    }
+
+    .arrow-img {
+        max-width: 35px;
     }
 }
